@@ -6,12 +6,12 @@ body {
   font-family: Verdana, Geneva, sans-serif;
 }
 
-
 .heading {
   font-family: 'Press Start 2P', monospace;
-  color: white;
+  color: yellow;
+  font-size: 50px;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .cards {
@@ -50,11 +50,27 @@ body {
   padding: 5px 25px;
 }
 
+.result-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+}
+
+.result-heading {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 25px;
+  color: crimson;
+  margin: 40px 0px 10px 0px;
+
+}
+
 .js-result,
 .js-moves,
 .js-score {
-  display: block;
-  text-align: center;
+  margin: 10px;
 }
 
 .reset-area {
@@ -70,4 +86,5 @@ body {
   border-radius: 5px;
   border-color: white;
   padding: 5px 25px;
+  margin-top: 20px;
 }
