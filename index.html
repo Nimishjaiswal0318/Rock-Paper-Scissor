@@ -7,69 +7,69 @@
 </head>
 
 <body>
-  <p class="heading">Rock Paper Scissors</p>
+  <p class="game-title">Rock Paper Scissors</p>
 
-  <div class="cards">
+  <div class="choices-container">
 
-    <div class="option-card">
+    <div class="choice-card">
 
-      <div class="thumbnail-box">
-        <img class="thumbnail" src="Image/rock.png">
+      <div class="card-image-wrapper">
+        <img class="choice-card-image" src="Image/rock.png">
       </div>
 
-      <div class="button-box">
+      <div class="card-button-wrapper">
         <button onclick="
        playGame('rock');
-      " class="option-button">Rock</button>
+      " class="choice-button">Rock</button>
       </div>
 
     </div>
 
 
-    <div class="option-card">
+    <div class="choice-card">
 
-      <div class="thumbnail-box">
-        <img class="thumbnail" src="Image/paper.png">
+      <div class="card-image-wrapper">
+        <img class="choice-card-image" src="Image/paper.png">
       </div>
 
-      <div class="button-box">
+      <div class="card-button-wrapper">
         <button onclick="
        playGame('paper');
-       " class="option-button">Paper</button>
+       " class="choice-button">Paper</button>
       </div>
 
     </div>
 
-    <div class="option-card">
+    <div class="choice-card">
 
-      <div class="thumbnail-box">
-        <img class="thumbnail" src="Image/scissor.png">
+      <div class="card-image-wrapper">
+        <img class="choice-card-image" src="Image/scissor.png">
       </div>
 
-      <div class="button-box">
+      <div class="card-button-wrapper">
         <button onclick="
         playGame('scissors');
-       " class="option-button">Scissors</button>
+       " class="choice-button">Scissors</button>
       </div>
 
     </div>
   </div>
 
-  <div class="result-area">
-    <h4 class="result-heading">Result</h4>
+  <div class="game-summary">
+    <h4 class="summary-title">Result</h4>
     <p class="js-result"></p>
     <p class="js-moves"></p>
     <p class="js-score"></p>
   </div>
 
-  <div class="reset-area">
+  <div class="controls-section">
     <button onclick="
     score.win = 0;
     score.lose = 0;
     score.tie = 0;
     localStorage.removeItem('score');
     updateScore();
-  " class="reset-button">Reset Score</button>
+  " class="reset-score-button">Reset Score</button>
   </div>
 
 
